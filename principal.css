@@ -1,0 +1,155 @@
+header {
+  position: relative;
+}
+
+/* Asegura que la navegación esté sobre el carrusel */
+.navbar-overlay {
+  position: absolute;
+  color: #f9f9f9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que el nav esté sobre el carrusel */
+ 
+}
+
+/* Asegura que el contenido del navbar tenga suficiente padding */
+.navbar {
+  padding: 20px 30px; /* Ajusta el padding del navbar */
+}
+
+/* Estiliza el texto del navbar */
+.navbar-brand {
+  font-size: 1.3rem; /* Tamaño del texto del logo */
+  color: rgb(237, 229, 229);
+}
+
+/* Estiliza los enlaces del navbar */
+.navbar-nav .nav-link {
+  font-size: 1.3rem; /* Tamaño de texto de los enlaces */
+  color:rgb(225, 213, 213);
+}
+
+
+/* Asegúrate de que el contenedor de la imagen del carrusel cubra el área completa */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilo para el contenido del carrusel */
+.carousel-caption {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.carousel-caption h1 {
+  font-size: 2.5rem;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+.container-section {
+  padding: 2rem 0;
+  background-color: #f9f9f9; /* Color de fondo para la sección */
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.h2text {
+  font-size: 2rem; /* Tamaño del texto del encabezado */
+  margin-bottom: 1rem;
+  color: #333; /* Color del texto del encabezado */
+  font-weight: 300; /* Peso de fuente más ligero */
+  padding: 2%; /* Reduce el padding a un valor más razonable */
+}
+.text{
+  text-align: center;
+  padding: 5%;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem; /* Espacio entre la imagen y el texto */
+  max-width: 800px; /* Ancho máximo del contenedor de contenido */
+  margin: 0 auto; /* Centra el contenedor de contenido */
+}
+
+.image-container {
+  flex: 0 0 auto; /* La imagen no crecerá ni se encogerá */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; /* Borde redondeado opcional */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para la imagen */
+}
+
+.textp {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+  text-align: center;
+  gap: 1rem; /* Ajusta el espacio entre elementos */
+  max-width: 800px; /* Ancho máximo del contenedor */
+  margin: 2%; /* Ajusta el margen alrededor del contenedor */
+  padding: 2%; /* Ajusta el padding dentro del contenedor */
+}
+
+/* Footer */
+.redes {
+  display: flex; 
+  justify-content: center;
+  gap: 10px; 
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 60px; /* Tamaño de las imágenes, ajusta según sea necesario */
+  height: 40px; /* Tamaño de las imágenes, ajusta según sea necesario */
+  object-fit: contain; /* Asegura que las imágenes mantengan sus proporciones */
+  transition: transform 0.3s ease; /* Transición suave para efectos al pasar el ratón */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+.tx {
+  text-align: center;
+  padding: 1%;
+  color: #f9f9f9;
+}
+
+.cpry {
+  text-align: center;
+  color: rgb(247, 251, 254);
+  padding: 2%;
+}
+.foter {
+  background-color: #0b0b0bde;
+  padding: 5%;
+}
+
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 992px) {
+  .navbar-brand {
+    font-size: 1.2rem; /* Ajusta el tamaño del texto de la marca en pantallas pequeñas */
+  }
+
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgdmlld0JveD0iMCAwIDEyIDEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMHB4IiBoZWlnaHQ9IjEwcHgiIHZpZXdCb3g9IjAgMCAxMiAxMiI+PHBhdGggZD0iTTEyIDBDNi41NTkgMEAzIDQuNjU5OSAzIDMuMzc1NyA0LjIgNi4yNTggOS42MjA0IDQuOCA4LjE3MiAyIDExLjk2NjUgMTIgOC4xNzIgMTIgNi43OTIgMCA1LjIgNi43OTIgMy4yNDYgNS4yNDYgMCA0LjIgMy42NDYgMCA0Ljk4NjcgMy4yNDYgMy4yNDYgMCAzIDcuNTU5OCAwIDMuMjQ2IDAuNzQyMyA1LjIgNC4yNjYgNi41OTggMy42NDYgMCA3LjM3NTcgNC41NTkgMCA1LjI0NzQgOC4zNDYgMCA1Ljk3MjQgMCAyIDB4MjAgMCA0IHgvMyA2Ljk3NiAyIDAgMy4yNDYgMC43NDA3IDAuNDA3MTQgMC4yNDYgMCA2LjEyNzEgMCAwIDY0LjY5MyA0LjI4MjI3IDQuNzI2IDMuMDQ4OSAwLjM0NzMgMy42NTcgMC4yNTUgMC44NjIgOC4xMTQgMjMgNy41MzkgMTIuNzQ4MSAyMi4yNDYgMTMuMDMyIDIuNzUyMiA5LjkzMSAxLjU0MSA2LjU1MyA5LjkzMSAzLjY0MiA3LjA2MyA3LjA2MyA3LjA2MyAzLjY0MiAyLjMyNjUgMi4zMjYgMCA3LjA2MyAwLjY0MiAzLjUgNi43MzYgOC4xNzIgOC4xNzIgOC4xNzIgMCAwLjM0NTcgMjAuMTgyIDIuMzI4NCAzLjY1MjI7IiBzdHJva2UtbGluZWNhcD0iMnIiIHN0cm9rZS1kYXNoYXJyYXk9IjAuMyIvPjwvc3ZnPg==');
+  }
+}

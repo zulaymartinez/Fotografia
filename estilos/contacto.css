@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.main-fn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.texs {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.response-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #5cb85c;
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+}
+
+.btn-primary {
+    background-color: #5cb85c;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4cae4c;
+}
+
+.section {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+
+    display: flex;  /* Para mostrar los elementos en una fila */
+    justify-content: space-around; /* Para distribuir uniformemente los elementos */
+    align-items: center; /* Para alinear verticalmente los elementos al centro */
+    /* Estilos adicionales */
+    padding: 20px; /* Espaciado interno */
+    background-color: #874242; /* Color de fondo */
+}
+
+.img {
+    text-align: center; /* Alineación del texto dentro de cada div.img */
+    margin: 10px; /* Márgenes entre los elementos */
+ 
+}
+
+.img img {
+    width: 100%; /* Ancho del 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Asegura que las imágenes se comporten como bloques */
+    
+}
+
+samp {
+    display: block; /* Mostrar <samp> como un bloque para separarlo verticalmente */
+    font-style: italic; /* Estilo de fuente cursiva */
+    font-size: 14px; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+    text-align: center;
+}
+
+
+/* Footer */
+.redes {
+    display: flex; 
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 20px;
+  }
+  .text {
+    text-align: center;
+    padding: 5%;
+    font-weight: 500;
+  }
+  
+  .social-icon {
+    width: 60px; /* Tamaño de las imágenes, ajusta según sea necesario */
+    height: 40px; /* Tamaño de las imágenes, ajusta según sea necesario */
+    object-fit: contain; /* Asegura que las imágenes mantengan sus proporciones */
+    transition: transform 0.3s ease; /* Transición suave para efectos al pasar el ratón */
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
+  }
+  
+  .text {
+    text-align: center;
+    padding: 1%;
+    color: #f9f9f9;
+    font-weight: 900;
+  }
+  
+  .cpry {
+    text-align: center;
+    color: aliceblue;
+    padding: 2%;
+    font-weight: 500;
+  }
+  
+  
+  
+  .foter {
+    background-color: #060404de;
+    padding: 5%;
+  }
+
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura como desees */
+    background-color: #f6f0f0; /* Color de fondo opcional */
+    padding: 5%;
+}
+
+.imges {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    text-align: center;
+}
+
+.imges div {
+    margin-bottom: 20px; /* Espacio entre cada ícono y su texto */
+}
+
+.imges img {
+    width: 100px; /* Ancho de las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+  

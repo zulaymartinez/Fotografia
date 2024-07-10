@@ -1,0 +1,109 @@
+header {
+  background-color: #70b3f6; /* Color de fondo oscuro */
+  padding: 1rem 0; /* Padding arriba y abajo */
+}
+
+.nav-link {
+  color: #0d0d0d; /* Color de texto blanco */
+  font-weight: bold; /* Texto en negrita */
+}
+
+.nav-link:hover {
+  color: #dddddd; /* Color del texto al pasar el ratón */
+}
+
+.container-h {
+  display: flex;
+  justify-content: right; /* Centra el contenido del header */
+}
+
+
+.container-h {
+  background-color: #41a4de;
+  padding: 1rem;
+}
+
+.container-m {
+  padding: 2rem;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.secc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1200px; /* Ajusta según necesites */
+  justify-content: center;
+}
+.seccion {
+  flex: 1 1 calc(50% - 1rem); /* 50% width for each section */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: #e3e9e5;
+  border: 3%;
+  margin-bottom: 1rem;
+  max-width: 500px; /* Ajusta según necesites */
+}
+.seccion img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+.seccion p {
+  text-align: justify;
+  color: #333;
+}
+.sect {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  justify-content: center;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.h1{
+  padding: 2%;
+}
+
+
+.redes {
+  display: flex; 
+  justify-content: center;
+  gap: 10px; 
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 60px; /* Tamaño de las imágenes, ajusta según sea necesario */
+  height: 40px; /* Tamaño de las imágenes, ajusta según sea necesario */
+  object-fit: contain; /* Asegura que las imágenes mantengan sus proporciones */
+  transition: transform 0.3s ease; /* Transición suave para efectos al pasar el ratón */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+.tx {
+  text-align: center;
+  padding: 1%;
+  color: #f9f9f9;
+}
+
+.cpry {
+  text-align: center;
+  color: aliceblue;
+  padding: 2%;
+}
+
+.foter {
+  background-color: #0b0b0bde;
+  padding: 5%;
+}
+

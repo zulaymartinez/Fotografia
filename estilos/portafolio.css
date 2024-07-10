@@ -1,0 +1,199 @@
+header {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Ajusta la altura del header a la altura de la pantalla */
+}
+
+.img {
+  position: relative;
+  height: 100%; /* Asegura que el contenedor ocupe toda la altura del header */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.img h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.navbar-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que el nav esté sobre la imagen de fondo */
+  padding: 0.5rem 0; /* Ajusta el padding del navbar */
+}
+
+.navbar {
+  padding: 20px 30px; /* Ajusta el padding del navbar */
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre el logo y el menú de navegación */
+  align-items: center; /* Alinea verticalmente el contenido */
+  
+  
+}
+
+.navbar-brand {
+  font-size: 1.3rem; /* Tamaño del texto del logo */
+  color: rgb(237, 229, 229);
+  text-decoration: none; /* Quita el subrayado del logo */
+}
+
+.navbar-nav {
+  list-style: none; /* Quita los puntos de lista */
+  padding-left: 0; /* Quita el padding izquierdo por defecto */
+  margin-bottom: 0; /* Quita el margen inferior por defecto */
+  display: flex;
+  gap: 1rem; /* Espacio entre los enlaces */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.3rem; /* Tamaño de texto de los enlaces */
+  color: rgb(225, 213, 213);
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .img {
+    height: 40vh;
+  }
+
+  .img h1 {
+    font-size: 2rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .img {
+    height: 30vh;
+  }
+
+  .img h1 {
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.8rem;
+  }
+}
+
+/* Main */
+.container-main {
+  padding: 1rem;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  max-width: 300px; /* Ajusta el ancho máximo de las tarjetas */
+  height: 300px; /* Ajusta la altura de las tarjetas para que sean del mismo tamaño */
+  margin: 0 auto; /* Centra las tarjetas horizontalmente */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px; /* Asegura que la imagen tenga bordes redondeados */
+  aspect-ratio: 1; /* Esto asegura que las imágenes sean cuadradas */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Espacio entre las tarjetas */
+  justify-content: center; /* Alinea horizontalmente al centro */
+  align-items: center; /* Alinea verticalmente al centro */
+}
+
+@media (max-width: 992px) {
+  .card {
+    max-width: 200px; /* Ajusta el ancho máximo de las tarjetas en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 576px) {
+  .container-main {
+    padding: 0.5rem;
+  }
+
+  .card {
+    max-width: 150px; /* Ajusta el ancho máximo de las tarjetas en pantallas aún más pequeñas */
+  }
+}
+
+/* Footer */
+.foter {
+  background-color: #060404de;
+  padding: 5%;
+}
+
+.redes {
+  display: flex; 
+  justify-content: center;
+  gap: 10px; 
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 60px; /* Tamaño de las imágenes, ajusta según sea necesario */
+  height: 40px; /* Tamaño de las imágenes, ajusta según sea necesario */
+  object-fit: contain; /* Asegura que las imágenes mantengan sus proporciones */
+  transition: transform 0.3s ease; /* Transición suave para efectos al pasar el ratón */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+.text {
+  text-align: center;
+  padding: 5%;
+  color: #f9f9f9;
+  font-weight: 900;
+}
+
+.cpry {
+  text-align: center;
+  color: aliceblue;
+  padding: 2%;
+  font-weight: 500;
+}

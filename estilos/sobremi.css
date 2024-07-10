@@ -1,0 +1,202 @@
+header {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Ajusta la altura del header a la altura de la pantalla */
+  }
+  
+  .img {
+    position: relative;
+    height: 100%; /* Asegura que el contenedor ocupe toda la altura del header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .img h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  /* Asegura que la navegación esté sobre la imagen de fondo */
+  .navbar-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el nav esté sobre la imagen de fondo */
+    padding: 0.5rem 0; /* Ajusta el padding del navbar */
+  }
+  .navbar-nav ms-auto{
+   left: 0; 
+  }
+  
+  /* Asegura que el contenido del navbar tenga suficiente padding */
+  .navbar {
+    padding: 20px 30px; /* Ajusta el padding del navbar */
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre el logo y el menú de navegación */
+    align-items: center; /* Alinea verticalmente el contenido */
+  }
+  
+  /* Estiliza el texto del navbar */
+  .navbar-brand {
+    font-size: 1.3rem; /* Tamaño del texto del logo */
+    color: rgb(237, 229, 229);
+    text-decoration: none; /* Quita el subrayado del logo */
+    align-items: center;
+  }
+  
+  /* Estiliza los enlaces del navbar */
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+    align-items: center;
+    left: 0;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.3rem; /* Tamaño de texto de los enlaces */
+    color: rgb(225, 213, 213);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    align-items: center;
+  }
+  
+  /* Elimina los puntos de lista */
+  .navbar-nav {
+    list-style: none; /* Quita los puntos de lista */
+    padding-left: 0; /* Quita el padding izquierdo por defecto */
+    margin-bottom: 0; /* Quita el margen inferior por defecto */
+  }
+  
+  /* Elimina el padding y margen por defecto de los elementos de lista */
+  .navbar-nav .nav-item {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mainsob {
+    padding: 2rem; /* Padding alrededor del contenido */
+    background-color: #f8f9fa; /* Color de fondo suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para el contenedor */
+    max-width: 800px; /* Ancho máximo */
+    margin: 2rem auto; /* Centrar el contenedor y agregar margen superior e inferior */
+    font-family: Arial, sans-serif; /* Fuente */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.mainsob p {
+    margin-bottom: 1.5rem; /* Margen inferior entre párrafos */
+}
+
+
+
+.sec3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #9fdef3;
+  padding: 5%;
+}
+
+.imgs {
+  flex: 1;
+  text-align: center;
+  
+}
+
+.tex {
+  flex: 1;
+  padding: 20px;
+}
+
+.cont {
+  margin-top: 20px;
+  
+}
+
+.progress {
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  font-size: 14px;
+  padding: 5px;
+}
+
+/* Footer */
+.text {
+  text-align: center;
+  padding: 5%;
+  font-weight: 500;
+}
+
+.redes {
+  display: flex; 
+  justify-content: center;
+  gap: 10px; 
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 60px; /* Tamaño de las imágenes, ajusta según sea necesario */
+  height: 40px; /* Tamaño de las imágenes, ajusta según sea necesario */
+  object-fit: contain; /* Asegura que las imágenes mantengan sus proporciones */
+  transition: transform 0.3s ease; /* Transición suave para efectos al pasar el ratón */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+.tx {
+  text-align: center;
+  padding: 1%;
+  color: #f9f9f9;
+}
+
+.cpry {
+  text-align: center;
+  color: aliceblue;
+  padding: 2%;
+}
+
+.foter {
+  background-color: #040505de;
+  padding: 5%;
+}
+
+
+.como {
+  padding: 20px;
+  background-color: #f0f0f0;
+  
+}
+
+.texth {
+  color: #333;
+  text-align: left;
+  padding: 2%;
+}
+
+.cont {
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: justify;
+  text-align: center;
+  
+}
